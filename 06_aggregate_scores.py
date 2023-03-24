@@ -1,3 +1,13 @@
+"""Aggregate scores from CNN prediction across dates and times of day
+
+This script takes the raw predictions saved by the previous script 05_predict_on_field_data.py
+and summarizes the detected vocalizations across dates and times of day, using various thresholds. 
+
+The files saved by this script are used in the subsequent notebook 07_explore_results.ipynb. Note that
+the github repository does not contain the full (very large) table of CNN outputs nor the full original audio
+dataset, and thus does not contain the files needed to reproduce the outputs of this script. The full set
+of CNN output scores is available from the authors upon reasonable request. 
+"""
 import numpy as np
 import pandas as pd
 from glob import glob
@@ -5,8 +15,9 @@ from scipy.special import softmax, logit
 from opensoundscape.audiomoth import audiomoth_start_time
 import pytz
 
-# load score tables produced by 05_predict_on_field_data.py and aggregate into one table:
-scores = pd.concat([pd.read_csv(f) for f in glob('/media/emu/projects/sml161/ecco12_ramu/cnn_preds/sine2022a/preds*.csv')])
+# load score tables produced by prediction on field data, and aggregate into one table:
+# Note that the full prediction tables are not included in this repository. They are available upon reasonable reqest.
+scores = pd.concat([pd.read_csv(f) for f in glob('prediction/output/dir/preds*.csv')])
 thresholds = [2,4,6,7.313,8,10]
 threshold_columns = [f"t_{th}" for th in thresholds]
 
