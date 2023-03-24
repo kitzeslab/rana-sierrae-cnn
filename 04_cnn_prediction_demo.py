@@ -25,26 +25,27 @@ wandb_session = wandb.init(
 score_save_dir = './resources/'
 
 # load the OpenSoundscape CNN model object
+# TODO: update the model version to opso 0.8.0
 model = load_model('./resources/rana_sierrae_cnn.model')
 
 # generate a list of all folders containing audio data to run predictions on
 # for this example we should make it the validation set #TODO
 audio_folders = ['./resources/field_data/']
 
-# TODO: update the model version to opso 0.8.0
 validation_df = pd.read_csv('./resources/validation_set.csv').set_index(['file','start_time','end_time'])
 
 # generate predictions using batch size 1024
 scores, _, unsafe_samples = model.predict(validation_df,num_workers=12,batch_size=1024,wandb_session=wandb_session)
+
 # compute the softmax score across the two classes
 scores['softmax']=softmax(tensor(scores[['ramu','negative']].values),1)[:,0].numpy()
 
 # save scores to file along with labels
 validation_df['score']=scores['softmax']
-
 validation_df[['ramu','score']].to_csv('./resources/validation_labels_and_scores.csv')
 
 # let wandb know that this task finished successfully
 wandb_session.finish()
 
 #TODO: save validation set scores to ./resources/validation_labels_and_scores.csv
+#TODO rename 'ramu' class
