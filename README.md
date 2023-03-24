@@ -1,6 +1,6 @@
 # Automated detection of _Rana sierrae_ vocalizations
 
-This repository contains scripts related to the analyses and methods of a manuscript submitted for peer review to the American Naturalist:
+This repository contains scripts related to the analyses and methods of a manuscript submitted to the American Naturalist:
 
 > Lapp, Smith, and Kitzes, _in prep_. "Aquatic soundscape recordings reveal diverse vocalizations and nocturnal activity of an endangered frog".
 
