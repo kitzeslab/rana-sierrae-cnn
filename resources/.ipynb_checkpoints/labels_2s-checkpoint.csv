@@ -1,4 +1,4 @@
-audio_file,start_time,end_time,A,B,C,D,V,X
+file,start_time,end_time,A,B,C,D,E,X
 /media/emu/datasets/labeled/ramu_10s_msd0558/clips/sine2022a_MSD-0558_20220623_073000_0-10s.wav,0.0,2.0,1,0,0,0,0,0
 /media/emu/datasets/labeled/ramu_10s_msd0558/clips/sine2022a_MSD-0558_20220623_073000_0-10s.wav,0.5,2.5,1,0,0,0,0,0
 /media/emu/datasets/labeled/ramu_10s_msd0558/clips/sine2022a_MSD-0558_20220623_073000_0-10s.wav,1.0,3.0,1,0,0,0,0,0

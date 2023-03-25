@@ -1,0 +1,120 @@
+
+Training Epoch 0
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/torch/utils/data/dataloader.py:554: UserWarning: This DataLoader will create 12 worker processes in total. Our suggested max number of worker in current system is 10 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Epoch: 0 [batch 0/108, 0.00%]
+	DistLoss: 0.796
+Metrics:
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpdm0o_zg3wandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpz73s6lj3wandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmprn3d__uowandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp0prr2ww_wandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmphmstsem4wandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpnbjalf_nwandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpdlpngx7kwandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpqm0za7r_wandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpx3tz6qq6wandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpauvd2xxpwandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpqa0w_v61wandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmplbtayrimwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmptrhpauvtwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpbsogeaugwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpjlq189c3wandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpsx1yej_owandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp2t3udliewandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp0n2pw3vrwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpw5v5e_quwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpix8pfqhjwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpn8ez2mypwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpdsaj1xdowandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpczljmipywandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmplkvk_vvowandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmppue_zecowandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpl6tzu45rwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmplebgocjowandb'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp7i1cxb8nwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpw70o66iqwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpg7maxle1wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmptgucmxw_wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpqnqfj_d2wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpleoq39riwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp4tkbu4frwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpcttlow4ewandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpqfwt637kwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpkoo_ds5vwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpe9198_3wwandb-artifacts'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp6_t79c6fwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpjncwep9wwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpgvwv3b_bwandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpruhkh389wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp5rahx4_3wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpzf7bebo_wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp0zw5use4wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpphb82jx_wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp3328vy7awandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up <TemporaryDirectory '/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpneydh9m5wandb-media'>
+  _warnings.warn(warn_message, ResourceWarning)
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x28eded3a0>
+Traceback (most recent call last):
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1466, in __del__
+    self._shutdown_workers()
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1430, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/multiprocessing/connection.py", line 936, in wait
+    ready = selector.select(timeout)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt:
+KeyboardInterrupt
+No such comm target registered: jupyter.widget.control

@@ -1,0 +1,38 @@
+2023-03-25 17:38:25,869 INFO    MainThread:75213 [wandb_setup.py:_flush():68] Configure stats pid to 75213
+2023-03-25 17:38:25,870 INFO    MainThread:75213 [wandb_setup.py:_flush():68] Loading settings from /Users/SML161/.config/wandb/settings
+2023-03-25 17:38:25,870 INFO    MainThread:75213 [wandb_setup.py:_flush():68] Loading settings from /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/settings
+2023-03-25 17:38:25,870 INFO    MainThread:75213 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-03-25 17:38:25,870 INFO    MainThread:75213 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-25 17:38:25,870 INFO    MainThread:75213 [wandb_init.py:_log_setup():478] Logging user logs to /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/logs/debug.log
+2023-03-25 17:38:25,870 INFO    MainThread:75213 [wandb_init.py:_log_setup():479] Logging internal logs to /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/logs/debug-internal.log
+2023-03-25 17:38:25,870 INFO    MainThread:75213 [wandb_init.py:_jupyter_setup():428] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x174c7ff70>
+2023-03-25 17:38:25,871 INFO    MainThread:75213 [wandb_init.py:init():518] calling init triggers
+2023-03-25 17:38:25,871 INFO    MainThread:75213 [wandb_init.py:init():521] wandb.init called with sweep_config: {}
+config: {'comment': 'Description: training resnet18 on A & E classes and excluding unknown class X'}
+2023-03-25 17:38:25,871 INFO    MainThread:75213 [wandb_init.py:init():571] starting backend
+2023-03-25 17:38:25,871 INFO    MainThread:75213 [wandb_init.py:init():575] setting up manager
+2023-03-25 17:38:25,879 INFO    MainThread:75213 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-03-25 17:38:25,883 INFO    MainThread:75213 [wandb_init.py:init():582] backend started and connected
+2023-03-25 17:38:25,888 INFO    MainThread:75213 [wandb_run.py:_label_probe_notebook():1202] probe notebook
+2023-03-25 17:38:25,888 INFO    MainThread:75213 [wandb_run.py:_label_probe_notebook():1212] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-25 17:38:25,888 INFO    MainThread:75213 [wandb_init.py:init():670] updated telemetry
+2023-03-25 17:38:25,915 INFO    MainThread:75213 [wandb_init.py:init():710] communicating run to backend with 60.0 second timeout
+2023-03-25 17:38:26,253 INFO    MainThread:75213 [wandb_run.py:_on_init():2121] communicating current version
+2023-03-25 17:38:26,405 INFO    MainThread:75213 [wandb_run.py:_on_init():2125] got version response upgrade_message: "wandb version 0.14.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-25 17:38:26,405 INFO    MainThread:75213 [wandb_init.py:init():758] starting run threads in backend
+2023-03-25 17:38:31,486 INFO    MainThread:75213 [wandb_run.py:_console_start():2101] atexit reg
+2023-03-25 17:38:31,486 INFO    MainThread:75213 [wandb_run.py:_redirect():1959] redirect: SettingsConsole.WRAP_RAW
+2023-03-25 17:38:31,486 INFO    MainThread:75213 [wandb_run.py:_redirect():2024] Wrapping output streams.
+2023-03-25 17:38:31,486 INFO    MainThread:75213 [wandb_run.py:_redirect():2046] Redirects installed.
+2023-03-25 17:38:31,486 INFO    MainThread:75213 [wandb_init.py:init():798] run started, returning control to user process
+2023-03-25 17:38:31,487 INFO    MainThread:75213 [wandb_init.py:_pause_backend():391] pausing backend
+2023-03-25 17:38:31,487 INFO    MainThread:75213 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-25 17:38:31,490 INFO    MainThread:75213 [wandb_init.py:_resume_backend():400] resuming backend
+2023-03-25 17:38:31,709 INFO    MainThread:75213 [wandb_init.py:_pause_backend():391] pausing backend
+2023-03-25 17:38:31,709 INFO    MainThread:75213 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-25 17:38:43,714 INFO    MainThread:75213 [wandb_init.py:_resume_backend():400] resuming backend
+2023-03-25 17:38:43,749 INFO    MainThread:75213 [wandb_run.py:_config_callback():1249] config_cb None None {'architecture': 'resnet18', 'sample_duration': 2.0, 'cuda_device_count': 0, 'mps_available': True, 'classes': "Index(['rana_sierrae', 'negative'], dtype='object')", 'single_target': True, 'opensoundscape_version': '0.8.0', 'l2_regularization': 0.0005, 'learning_rate': 0.002, 'sample_shape': 'n/a'}
+2023-03-25 17:38:43,749 INFO    MainThread:75213 [wandb_run.py:_config_callback():1249] config_cb None None {'epochs': 20, 'batch_size': 128, 'num_workers': 12, 'lr_update_interval': 10, 'lr_cooling_factor': 0.7, 'optimizer_cls': 'torch.optim.sgd.SGD', 'model_save_path': '/Users/SML161/ecco12_ramu/rana-sierrae-cnn/resources'}
+2023-03-25 17:40:53,778 INFO    MainThread:75213 [wandb_init.py:_pause_backend():391] pausing backend
+2023-03-25 17:40:53,778 INFO    MainThread:75213 [jupyter.py:save_ipynb():379] not saving jupyter notebook

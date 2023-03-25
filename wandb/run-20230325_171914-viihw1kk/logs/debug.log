@@ -1,0 +1,37 @@
+2023-03-25 17:19:14,539 INFO    MainThread:74652 [wandb_setup.py:_flush():68] Configure stats pid to 74652
+2023-03-25 17:19:14,540 INFO    MainThread:74652 [wandb_setup.py:_flush():68] Loading settings from /Users/SML161/.config/wandb/settings
+2023-03-25 17:19:14,540 INFO    MainThread:74652 [wandb_setup.py:_flush():68] Loading settings from /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/settings
+2023-03-25 17:19:14,540 INFO    MainThread:74652 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-03-25 17:19:14,540 INFO    MainThread:74652 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-25 17:19:14,540 INFO    MainThread:74652 [wandb_init.py:_log_setup():478] Logging user logs to /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_171914-viihw1kk/logs/debug.log
+2023-03-25 17:19:14,540 INFO    MainThread:74652 [wandb_init.py:_log_setup():479] Logging internal logs to /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_171914-viihw1kk/logs/debug-internal.log
+2023-03-25 17:19:14,540 INFO    MainThread:74652 [wandb_init.py:_jupyter_setup():428] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x106465910>
+2023-03-25 17:19:14,541 INFO    MainThread:74652 [wandb_init.py:init():518] calling init triggers
+2023-03-25 17:19:14,541 INFO    MainThread:74652 [wandb_init.py:init():521] wandb.init called with sweep_config: {}
+config: {}
+2023-03-25 17:19:14,541 INFO    MainThread:74652 [wandb_init.py:init():571] starting backend
+2023-03-25 17:19:14,541 INFO    MainThread:74652 [wandb_init.py:init():575] setting up manager
+2023-03-25 17:19:14,544 INFO    MainThread:74652 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-03-25 17:19:14,550 INFO    MainThread:74652 [wandb_init.py:init():582] backend started and connected
+2023-03-25 17:19:14,554 INFO    MainThread:74652 [wandb_run.py:_label_probe_notebook():1202] probe notebook
+2023-03-25 17:19:14,554 INFO    MainThread:74652 [wandb_run.py:_label_probe_notebook():1212] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-25 17:19:14,554 INFO    MainThread:74652 [wandb_init.py:init():670] updated telemetry
+2023-03-25 17:19:14,586 INFO    MainThread:74652 [wandb_init.py:init():710] communicating run to backend with 60.0 second timeout
+2023-03-25 17:19:17,665 WARNING MsgRouterThr:74652 [router.py:message_loop():77] message_loop has been closed
+2023-03-25 17:19:21,196 WARNING MainThread:74652 [wandb_init.py:init():1129] interrupted
+Traceback (most recent call last):
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1108, in init
+    run = wi.init()
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 713, in init
+    result = run_init_handle.wait(
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 273, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 120, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 116, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/threading.py", line 581, in wait
+    signaled = self._cond.wait(timeout)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

@@ -1,0 +1,72 @@
+2023-03-25 17:19:14,546 INFO    StreamThr :74665 [internal.py:wandb_internal():87] W&B internal server running at pid: 74665, started at: 2023-03-25 17:19:14.546006
+2023-03-25 17:19:14,547 DEBUG   HandlerThread:74665 [handler.py:handle_request():144] handle_request: status
+2023-03-25 17:19:14,554 INFO    WriterThread:74665 [datastore.py:open_for_write():85] open: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_171914-viihw1kk/run-viihw1kk.wandb
+2023-03-25 17:19:14,555 DEBUG   SenderThread:74665 [sender.py:send():334] send: header
+2023-03-25 17:19:14,587 DEBUG   SenderThread:74665 [sender.py:send():334] send: run
+2023-03-25 17:19:14,855 ERROR   SenderThread:74665 [internal_api.py:execute():244] 404 response executing GraphQL.
+2023-03-25 17:19:14,856 ERROR   SenderThread:74665 [internal_api.py:execute():245] {"errors":[{"message":"entity group_name not found during upsertBucket","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-03-25 17:19:15,592 INFO    HandlerThread:74665 [handler.py:finish():841] shutting down handler
+2023-03-25 17:19:15,592 INFO    WriterThread:74665 [datastore.py:close():299] close: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_171914-viihw1kk/run-viihw1kk.wandb
+2023-03-25 17:19:15,592 ERROR   StreamThr :74665 [internal.py:wandb_internal():175] Thread SenderThread:
+Traceback (most recent call last):
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 128, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 241, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1592, in upsert_run
+    response = self.gql(
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 213, in gql
+    ret = self._retry_gql(
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 144, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/util.py", line 1065, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/util.py", line 1012, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.CommError: Permission denied, ask the project owner to grant you access
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal_util.py", line 100, in _run
+    self._process(record)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal.py", line 329, in _process
+    self._sm.send(record)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 341, in send
+    send_handler(record)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 927, in send_run
+    self._init_run(run, config_value_dict)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 955, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/apis/normalize.py", line 64, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 1592, in upsert_run
+    response = self.gql(
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 213, in gql
+    ret = self._retry_gql(
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 144, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/util.py", line 1065, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/wandb/util.py", line 1012, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.CommError: Permission denied, ask the project owner to grant you access

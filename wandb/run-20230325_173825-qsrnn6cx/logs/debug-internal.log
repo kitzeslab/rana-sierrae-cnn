@@ -1,0 +1,336 @@
+2023-03-25 17:38:25,881 INFO    StreamThr :75225 [internal.py:wandb_internal():87] W&B internal server running at pid: 75225, started at: 2023-03-25 17:38:25.881378
+2023-03-25 17:38:25,882 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status
+2023-03-25 17:38:25,889 INFO    WriterThread:75225 [datastore.py:open_for_write():85] open: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/run-qsrnn6cx.wandb
+2023-03-25 17:38:25,889 DEBUG   SenderThread:75225 [sender.py:send():334] send: header
+2023-03-25 17:38:25,916 DEBUG   SenderThread:75225 [sender.py:send():334] send: run
+2023-03-25 17:38:26,251 INFO    SenderThread:75225 [dir_watcher.py:__init__():216] watching files in: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files
+2023-03-25 17:38:26,251 INFO    SenderThread:75225 [sender.py:_start_run_threads():1065] run started: qsrnn6cx with start time 1679780305.883415
+2023-03-25 17:38:26,251 DEBUG   SenderThread:75225 [sender.py:send_request():361] send_request: summary_record
+2023-03-25 17:38:26,252 INFO    SenderThread:75225 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-03-25 17:38:26,254 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: check_version
+2023-03-25 17:38:26,254 DEBUG   SenderThread:75225 [sender.py:send_request():361] send_request: check_version
+2023-03-25 17:38:26,414 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: run_start
+2023-03-25 17:38:26,445 DEBUG   HandlerThread:75225 [system_info.py:__init__():31] System info init
+2023-03-25 17:38:26,445 DEBUG   HandlerThread:75225 [system_info.py:__init__():46] System info init done
+2023-03-25 17:38:26,445 INFO    HandlerThread:75225 [system_monitor.py:start():151] Starting system monitor
+2023-03-25 17:38:26,445 INFO    SystemMonitor:75225 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-25 17:38:26,445 INFO    HandlerThread:75225 [system_monitor.py:probe():172] Collecting system info
+2023-03-25 17:38:26,446 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started cpu
+2023-03-25 17:38:26,446 DEBUG   HandlerThread:75225 [system_info.py:probe():195] Probing system
+2023-03-25 17:38:26,448 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started disk
+2023-03-25 17:38:26,450 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started gpuapple
+2023-03-25 17:38:26,451 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started memory
+2023-03-25 17:38:26,451 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started network
+2023-03-25 17:38:26,452 DEBUG   HandlerThread:75225 [system_info.py:_probe_git():180] Probing git
+2023-03-25 17:38:26,482 DEBUG   HandlerThread:75225 [system_info.py:_probe_git():188] Probing git done
+2023-03-25 17:38:26,482 DEBUG   HandlerThread:75225 [system_info.py:probe():241] Probing system done
+2023-03-25 17:38:26,482 DEBUG   HandlerThread:75225 [system_monitor.py:probe():181] {'os': 'macOS-12.6-arm64-arm-64bit', 'python': '3.9.15', 'heartbeatAt': '2023-03-25T21:38:26.446856', 'startedAt': '2023-03-25T21:38:25.860416', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'git@github.com:kitzeslab/rana-sierrae-cnn.git', 'commit': '802b468d72062da53f8ca69a6354e9c3ad559e9b'}, 'email': 'sammlapp@gmail.com', 'root': '/Users/SML161/ecco12_ramu/rana-sierrae-cnn', 'host': 'DSAS-R2GHWXK40D', 'username': 'SML161', 'executable': '/Users/SML161/miniconda3/envs/opso080/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'total': 926.3517189025879, 'used': 14.354557037353516}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 32.0}}
+2023-03-25 17:38:26,483 INFO    HandlerThread:75225 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-25 17:38:26,483 INFO    HandlerThread:75225 [system_monitor.py:probe():185] Publishing system info
+2023-03-25 17:38:26,483 DEBUG   HandlerThread:75225 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-25 17:38:26,483 DEBUG   HandlerThread:75225 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-25 17:38:26,483 DEBUG   HandlerThread:75225 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-03-25 17:38:27,254 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/wandb-summary.json
+2023-03-25 17:38:27,254 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/conda-environment.yaml
+2023-03-25 17:38:27,254 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/requirements.txt
+2023-03-25 17:38:31,465 DEBUG   HandlerThread:75225 [system_info.py:_save_conda():86] Saving conda packages done
+2023-03-25 17:38:31,465 INFO    HandlerThread:75225 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-25 17:38:31,477 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:38:31,477 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:38:31,477 DEBUG   SenderThread:75225 [sender.py:send():334] send: files
+2023-03-25 17:38:31,478 INFO    SenderThread:75225 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-03-25 17:38:31,486 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-25 17:38:31,486 DEBUG   SenderThread:75225 [sender.py:send_request():361] send_request: stop_status
+2023-03-25 17:38:31,487 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: pause
+2023-03-25 17:38:31,487 INFO    HandlerThread:75225 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-25 17:38:31,487 INFO    HandlerThread:75225 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-25 17:38:31,505 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-25 17:38:31,506 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-25 17:38:31,506 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-25 17:38:31,506 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined cpu
+2023-03-25 17:38:31,506 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined disk
+2023-03-25 17:38:31,506 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined gpuapple
+2023-03-25 17:38:31,506 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined memory
+2023-03-25 17:38:31,506 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined network
+2023-03-25 17:38:31,506 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: resume
+2023-03-25 17:38:31,506 INFO    HandlerThread:75225 [handler.py:handle_request_resume():708] starting system metrics thread or process
+2023-03-25 17:38:31,506 INFO    HandlerThread:75225 [system_monitor.py:start():151] Starting system monitor
+2023-03-25 17:38:31,506 INFO    SystemMonitor:75225 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-25 17:38:31,506 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started cpu
+2023-03-25 17:38:31,507 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started disk
+2023-03-25 17:38:31,507 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started gpuapple
+2023-03-25 17:38:31,507 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started memory
+2023-03-25 17:38:31,510 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started network
+2023-03-25 17:38:31,618 DEBUG   SenderThread:75225 [sender.py:send():334] send: telemetry
+2023-03-25 17:38:31,619 DEBUG   SenderThread:75225 [sender.py:send():334] send: telemetry
+2023-03-25 17:38:31,619 DEBUG   SenderThread:75225 [sender.py:send():334] send: stats
+2023-03-25 17:38:31,709 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: pause
+2023-03-25 17:38:31,710 INFO    HandlerThread:75225 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-25 17:38:31,710 INFO    HandlerThread:75225 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-25 17:38:31,712 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-25 17:38:31,713 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-25 17:38:31,713 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-25 17:38:31,713 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined cpu
+2023-03-25 17:38:31,713 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined disk
+2023-03-25 17:38:32,104 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined gpuapple
+2023-03-25 17:38:32,104 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined memory
+2023-03-25 17:38:32,104 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined network
+2023-03-25 17:38:32,104 DEBUG   SenderThread:75225 [sender.py:send():334] send: stats
+2023-03-25 17:38:32,131 INFO    Thread-16 :75225 [upload_job.py:push():143] Uploaded file /var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp9klrjkqawandb/g5mqyy9s-wandb-metadata.json
+2023-03-25 17:38:32,277 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/conda-environment.yaml
+2023-03-25 17:38:32,277 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/wandb-metadata.json
+2023-03-25 17:38:37,115 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:38:42,136 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:38:43,715 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: resume
+2023-03-25 17:38:43,716 INFO    HandlerThread:75225 [handler.py:handle_request_resume():708] starting system metrics thread or process
+2023-03-25 17:38:43,716 INFO    HandlerThread:75225 [system_monitor.py:start():151] Starting system monitor
+2023-03-25 17:38:43,716 INFO    SystemMonitor:75225 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-25 17:38:43,716 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started cpu
+2023-03-25 17:38:43,717 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started disk
+2023-03-25 17:38:43,721 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started gpuapple
+2023-03-25 17:38:43,723 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started memory
+2023-03-25 17:38:43,726 INFO    SystemMonitor:75225 [interfaces.py:start():168] Started network
+2023-03-25 17:38:43,750 DEBUG   SenderThread:75225 [sender.py:send():334] send: config
+2023-03-25 17:38:43,751 DEBUG   SenderThread:75225 [sender.py:send():334] send: config
+2023-03-25 17:38:44,901 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: log_artifact
+2023-03-25 17:38:44,901 DEBUG   SenderThread:75225 [sender.py:send_request():361] send_request: log_artifact
+2023-03-25 17:38:45,332 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table/Samples / training samples w/augmentation_0_db734616273369658096.table.json
+2023-03-25 17:38:45,332 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media
+2023-03-25 17:38:45,333 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table/Samples 
+2023-03-25 17:38:45,333 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table
+2023-03-25 17:38:45,333 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table/Samples / training samples w
+2023-03-25 17:38:45,352 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: log_artifact
+2023-03-25 17:38:45,547 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: log_artifact
+2023-03-25 17:38:45,559 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-25 17:38:45,815 INFO    Thread-17 :75225 [upload_job.py:push():143] Uploaded file /var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp9klrjkqawandb/re5jlj7q-media/table/Samples / training samples w/augmentation_0_db734616273369658096.table.json
+2023-03-25 17:38:46,338 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table/Samples / training samples w/o augmentation_0_1f3f34c34f63eb177223.table.json
+2023-03-25 17:38:46,339 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table/Samples / validation samples_0_4dd90da823da09f0a49f.table.json
+2023-03-25 17:38:46,339 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table/Samples 
+2023-03-25 17:38:46,339 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/media/table/Samples / training samples w
+2023-03-25 17:38:46,384 INFO    Thread-19 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpciysuveq
+2023-03-25 17:38:46,488 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:38:46,654 INFO    Thread-32 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp0mgmydsv
+2023-03-25 17:38:46,697 INFO    Thread-29 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmppo1hhz7n
+2023-03-25 17:38:46,781 INFO    Thread-34 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp_v2cxjdt
+2023-03-25 17:38:46,782 INFO    Thread-35 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpmzaebmbk
+2023-03-25 17:38:46,881 INFO    Thread-36 :75225 [upload_job.py:push():143] Uploaded file /var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp9klrjkqawandb/swjm4ogv-media/table/Samples / training samples w/o augmentation_0_1f3f34c34f63eb177223.table.json
+2023-03-25 17:38:46,909 INFO    Thread-37 :75225 [upload_job.py:push():143] Uploaded file /var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp9klrjkqawandb/mig2dd98-media/table/Samples / validation samples_0_4dd90da823da09f0a49f.table.json
+2023-03-25 17:38:46,951 INFO    Thread-22 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpqo57hjcz
+2023-03-25 17:38:47,163 INFO    Thread-30 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpb79i13b4
+2023-03-25 17:38:47,439 INFO    Thread-27 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpz7k6zrnw
+2023-03-25 17:38:47,439 INFO    Thread-23 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpnmfpxy7d
+2023-03-25 17:38:47,480 INFO    Thread-28 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp9pmcb7az
+2023-03-25 17:38:47,519 INFO    Thread-33 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp9ixh1rkj
+2023-03-25 17:38:47,625 INFO    Thread-26 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmplwidne1g
+2023-03-25 17:38:47,671 INFO    Thread-31 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpulh0ub7d
+2023-03-25 17:38:47,812 INFO    Thread-24 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp6tdji5v8
+2023-03-25 17:38:47,846 INFO    Thread-20 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpoa_3li9r
+2023-03-25 17:38:47,913 INFO    Thread-21 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmptnbsuj9c
+2023-03-25 17:38:47,935 INFO    Thread-25 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp4vbcakwi
+2023-03-25 17:38:48,824 INFO    SenderThread:75225 [sender.py:send_request_log_artifact():1379] logged artifact run-qsrnn6cx-Samplestrainingsampleswaugmentation - {'id': 'QXJ0aWZhY3Q6NDA2ODM1OTM4', 'digest': '2fa11b53bcc9bbceb83b0bc6ed7e58f1', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU4ODE1MzE4', 'latestArtifact': None}, 'version': 'latest'}
+2023-03-25 17:38:48,824 DEBUG   SenderThread:75225 [sender.py:send():334] send: files
+2023-03-25 17:38:48,824 INFO    SenderThread:75225 [sender.py:_save_file():1319] saving file media/table/Samples / training samples w/augmentation_0_db734616273369658096.table.json with policy now
+2023-03-25 17:38:48,824 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:38:48,825 DEBUG   SenderThread:75225 [sender.py:send_request():361] send_request: log_artifact
+2023-03-25 17:38:49,329 INFO    Thread-38 :75225 [upload_job.py:push():143] Uploaded file /var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp9klrjkqawandb/m80odcmq-media/table/Samples / training samples w/augmentation_0_db734616273369658096.table.json
+2023-03-25 17:38:50,250 INFO    Thread-55 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpzfsamd33
+2023-03-25 17:38:50,643 INFO    Thread-52 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpe19m74zu
+2023-03-25 17:38:50,752 INFO    Thread-53 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp18l0mutq
+2023-03-25 17:38:50,819 INFO    Thread-43 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpox7vtozd
+2023-03-25 17:38:50,824 INFO    Thread-48 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpmfb1fuw_
+2023-03-25 17:38:50,846 INFO    Thread-51 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpz78grh44
+2023-03-25 17:38:50,848 INFO    Thread-56 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpdfuvh_4z
+2023-03-25 17:38:50,856 INFO    Thread-49 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp7iu_b4yj
+2023-03-25 17:38:50,936 INFO    Thread-44 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpiptjyfzc
+2023-03-25 17:38:50,936 INFO    Thread-45 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpi__qqg_c
+2023-03-25 17:38:51,013 INFO    Thread-40 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp_9ra6_8s
+2023-03-25 17:38:51,020 INFO    Thread-50 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmplwo7q1ly
+2023-03-25 17:38:51,020 INFO    Thread-47 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpl4h4f5qe
+2023-03-25 17:38:51,029 INFO    Thread-41 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp3sw2j0gw
+2023-03-25 17:38:51,159 INFO    Thread-42 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpfgksfc3j
+2023-03-25 17:38:51,253 INFO    Thread-54 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp8kny75jl
+2023-03-25 17:38:51,279 INFO    Thread-46 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpq4tow5u4
+2023-03-25 17:38:51,510 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:38:52,230 INFO    SenderThread:75225 [sender.py:send_request_log_artifact():1379] logged artifact run-qsrnn6cx-Samplestrainingsampleswoaugmentation - {'id': 'QXJ0aWZhY3Q6NDA2ODM1OTcw', 'digest': '089fe19f7e4bdf150380204e3658f098', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU4ODE1MzI0', 'latestArtifact': None}, 'version': 'latest'}
+2023-03-25 17:38:52,230 DEBUG   SenderThread:75225 [sender.py:send():334] send: files
+2023-03-25 17:38:52,230 INFO    SenderThread:75225 [sender.py:_save_file():1319] saving file media/table/Samples / training samples w/o augmentation_0_1f3f34c34f63eb177223.table.json with policy now
+2023-03-25 17:38:52,230 DEBUG   SenderThread:75225 [sender.py:send_request():361] send_request: log_artifact
+2023-03-25 17:38:52,729 INFO    Thread-57 :75225 [upload_job.py:push():143] Uploaded file /var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp9klrjkqawandb/blteyevr-media/table/Samples / training samples w/o augmentation_0_1f3f34c34f63eb177223.table.json
+2023-03-25 17:38:53,399 INFO    Thread-70 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpg7oq4u0i
+2023-03-25 17:38:53,458 INFO    Thread-59 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpmqlyuugg
+2023-03-25 17:38:53,692 INFO    Thread-74 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp7uaimidy
+2023-03-25 17:38:53,889 INFO    Thread-68 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp8xmzvcu6
+2023-03-25 17:38:53,918 INFO    Thread-72 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpy779vx__
+2023-03-25 17:38:53,920 INFO    Thread-73 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpc7qf8anr
+2023-03-25 17:38:53,936 INFO    Thread-69 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmplr5gyghx
+2023-03-25 17:38:53,970 INFO    Thread-75 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpgi1mt8ht
+2023-03-25 17:38:54,029 INFO    Thread-62 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpvegz0uq0
+2023-03-25 17:38:54,034 INFO    Thread-71 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpdaw98m8s
+2023-03-25 17:38:54,054 INFO    Thread-66 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpyv_y52qf
+2023-03-25 17:38:54,166 INFO    Thread-64 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmp9ug03e5_
+2023-03-25 17:38:54,210 INFO    Thread-60 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpaq4y5qpi
+2023-03-25 17:38:54,234 INFO    Thread-63 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpxg1h9bv9
+2023-03-25 17:38:54,255 INFO    Thread-61 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpxbyhwji1
+2023-03-25 17:38:54,466 INFO    Thread-67 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpqmv3bcy4
+2023-03-25 17:38:54,634 INFO    Thread-65 :75225 [upload_job.py:push():101] Uploaded file /Users/SML161/Library/Application Support/wandb/artifacts/staging/tmpbloc3zgj
+2023-03-25 17:38:55,379 INFO    SenderThread:75225 [sender.py:send_request_log_artifact():1379] logged artifact run-qsrnn6cx-Samplesvalidationsamples - {'id': 'QXJ0aWZhY3Q6NDA2ODM1OTk4', 'digest': 'b111c0e23fb343cf141c366fba7e9e54', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU4ODE1MzI5', 'latestArtifact': None}, 'version': 'latest'}
+2023-03-25 17:38:55,379 DEBUG   SenderThread:75225 [sender.py:send():334] send: files
+2023-03-25 17:38:55,379 INFO    SenderThread:75225 [sender.py:_save_file():1319] saving file media/table/Samples / validation samples_0_4dd90da823da09f0a49f.table.json with policy now
+2023-03-25 17:38:55,379 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:38:55,379 DEBUG   SenderThread:75225 [sender.py:send():334] send: history
+2023-03-25 17:38:55,380 DEBUG   SenderThread:75225 [sender.py:send_request():361] send_request: summary_record
+2023-03-25 17:38:55,381 INFO    SenderThread:75225 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-03-25 17:38:55,410 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/wandb-summary.json
+2023-03-25 17:38:55,410 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/output.log
+2023-03-25 17:38:55,854 INFO    Thread-76 :75225 [upload_job.py:push():143] Uploaded file /var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp9klrjkqawandb/kyqq5f4u-media/table/Samples / validation samples_0_4dd90da823da09f0a49f.table.json
+2023-03-25 17:38:56,542 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:38:57,514 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/output.log
+2023-03-25 17:39:00,413 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:01,530 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/config.yaml
+2023-03-25 17:39:01,557 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:05,606 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:06,579 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:10,626 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:11,596 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:15,644 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:16,617 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:20,670 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:21,630 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:25,694 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:26,651 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:30,719 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:31,667 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:35,795 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/output.log
+2023-03-25 17:39:35,963 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:36,690 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:40,995 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:41,703 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:43,729 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-25 17:39:43,730 DEBUG   SenderThread:75225 [sender.py:send():334] send: stats
+2023-03-25 17:39:46,722 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:46,743 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:51,747 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:51,761 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:39:56,759 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:39:56,777 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:01,776 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:01,795 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:06,797 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:06,817 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:11,810 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:11,838 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:13,733 DEBUG   SenderThread:75225 [sender.py:send():334] send: stats
+2023-03-25 17:40:16,830 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:17,753 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:21,842 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:22,769 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:26,862 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:27,784 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:31,885 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:32,801 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:36,896 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:37,822 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:41,917 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:42,840 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:43,733 DEBUG   SenderThread:75225 [sender.py:send():334] send: stats
+2023-03-25 17:40:46,939 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:48,157 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/output.log
+2023-03-25 17:40:48,275 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:51,959 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:53,293 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:40:53,778 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: pause
+2023-03-25 17:40:53,779 INFO    HandlerThread:75225 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-25 17:40:53,779 INFO    HandlerThread:75225 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-25 17:40:53,801 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-25 17:40:53,801 DEBUG   SystemMonitor:75225 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-25 17:40:53,801 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined cpu
+2023-03-25 17:40:53,802 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined disk
+2023-03-25 17:40:54,229 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined gpuapple
+2023-03-25 17:40:54,229 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined memory
+2023-03-25 17:40:54,229 INFO    HandlerThread:75225 [interfaces.py:finish():175] Joined network
+2023-03-25 17:40:54,229 DEBUG   SenderThread:75225 [sender.py:send():334] send: stats
+2023-03-25 17:40:56,202 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/output.log
+2023-03-25 17:40:56,973 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:40:59,244 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:01,993 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:04,266 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:07,010 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:09,283 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:12,032 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:14,309 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:17,052 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:19,321 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:22,073 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:24,342 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:27,088 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:29,355 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:32,109 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:34,376 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:37,125 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:39,398 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:42,145 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:44,418 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:47,168 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:49,440 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:52,188 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:54,457 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:41:57,206 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:41:59,470 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:02,222 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:04,486 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:07,244 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:09,498 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:12,266 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:14,518 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:17,281 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:19,538 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:22,297 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:24,559 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:27,319 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:29,576 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:32,338 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:34,593 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:37,361 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:39,608 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:42,384 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:44,626 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:47,402 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:49,641 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:52,417 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:42:52,852 INFO    Thread-13 :75225 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/SML161/ecco12_ramu/rana-sierrae-cnn/wandb/run-20230325_173825-qsrnn6cx/files/output.log
+2023-03-25 17:42:55,402 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:42:57,438 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:00,411 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:02,458 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:05,423 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:07,473 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:10,444 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:12,496 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:15,459 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:17,511 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:20,477 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:22,523 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:25,497 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:27,541 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:30,518 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:32,556 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:35,537 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:37,573 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:40,555 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:42,586 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:45,571 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:47,603 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:50,590 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:52,624 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:43:55,603 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:43:57,645 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:44:00,619 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:44:02,661 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:44:05,637 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:44:07,673 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:44:10,656 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:44:12,688 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:44:15,677 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:44:17,703 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-25 17:44:20,698 DEBUG   HandlerThread:75225 [handler.py:handle_request():144] handle_request: status_report
+2023-03-25 17:44:22,746 INFO    MainThread:75225 [internal.py:handle_exit():77] Internal process exited

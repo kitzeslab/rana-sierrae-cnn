@@ -1,13 +1,13 @@
 """Aggregate scores from CNN prediction across dates and times of day
 
+NOTE: the github repository does NOT contain the full (very large) table of CNN outputs nor the full original audio
+dataset, and thus does not contain the files needed to reproduce the outputs of this script. The full set
+of CNN output scores is available from the authors upon reasonable request. 
+
 This script takes the raw predictions saved by the cnn prediction task (which saves csvs of output scores)
 and summarizes the detected vocalizations across dates and times of day, using various thresholds. 
 
 The files saved by this script are used in the subsequent notebook 07_explore_results.ipynb. 
-
-NOTE: the github repository does NOT contain the full (very large) table of CNN outputs nor the full original audio
-dataset, and thus does not contain the files needed to reproduce the outputs of this script. The full set
-of CNN output scores is available from the authors upon reasonable request. 
 """
 import numpy as np
 import pandas as pd
@@ -23,7 +23,7 @@ thresholds = [2,4,6,7.313,8,10]
 threshold_columns = [f"t_{th}" for th in thresholds]
 
 # generate the softmax score across the two classes
-scores['sm']=softmax(scores[['ramu','negative']],axis=1)[:,0]
+scores['sm']=softmax(scores[['rana_sierrae','negative']],axis=1)[:,0]
 
 # generate the logit of the softmax score
 scores['lg']=logit(scores['sm'])
