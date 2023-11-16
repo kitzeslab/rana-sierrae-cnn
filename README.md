@@ -1,14 +1,17 @@
 # Automated detection of _Rana sierrae_ vocalizations
 
-This repository contains scripts related to the analyses and methods of a manuscript submitted to the American Naturalist:
+This repository contains scripts related to the analyses and methods of a manuscript accepted for publication in The American Naturalist:
 
 > Lapp, S., Smith, T. C., Wilhelm, A, Knapp, R., Kitzes, J. _In press_. Aquatic soundscape recordings reveal diverse vocalizations and nocturnal activity of an endangered frog. The American Naturalist.
 
-This notebook uses an open-source dataset of annotated _Rana sierrae_ vocalizations from aquatic soundscape recordings. That dataset is available on Dryad: 
+Manuscript Abstract:
+> Autonomous sensors provide opportunities to observe organisms across spatial and temporal scales that are not possible with direct human observation. By processing large data streams from autonomous sensors with deep learning methods, researchers can make novel and important natural history discoveries. In this study, we combine automated acoustic monitoring with deep learning models to observe breeding-associated activity in the endangered Sierra Nevada yellow-legged frog (Rana sierrae), behavior that current surveys do not measure. By deploying inexpensive hydrophones and developing a deep learning model to recognize breeding-associated vocalizations, we discover three undocumented R. sierrae vocalization types and find an unexpected temporal pattern of nocturnal breeding-associated vocal activity. This study exemplifies how the combination of autonomous sensor data and deep learning can shed new light on species’ natural history, especially during times or in locations where human observation is limited or impossible.
+
+This repository uses an open-source dataset of annotated _Rana sierrae_ vocalizations from aquatic soundscape recordings. That dataset is available on Dryad: 
 
 > Lapp, Sam; Kitzes, Justin (2023), Rana sierrae annotated aquatic soundscapes 2022, Dryad, Dataset, https://doi.org/10.5061/dryad.9s4mw6mn3
 
-The repository contains six notebooks and one script which each demonstrate one step of the analyses described in the manuscript. Running the six Jupyter Notebooks (`.ipynb`) sequentially (skipping the script `06_aggregate_scores.py`) allows the user to reproduce results from the manuscript, including data preparation, model training, and evaluation, using a subset of the full data (specifically, the publicly available annotated [dataset](https://doi.org/10.5061/dryad.9s4mw6mn3)). The results figures of the manuscript can be produced by directly running `07_explore_results.ipynb` without running any previous steps. 
+The repository contains six notebooks and one script which each demonstrate one step of the analyses described in the manuscript. Running the six Jupyter Notebooks (`.ipynb`) sequentially (skipping the script `06_aggregate_scores.py`) allows the user to reproduce results from the manuscript, including data preparation, model training, and evaluation, using a subset of the full data (specifically, the publicly available annotated [dataset](https://doi.org/10.5061/dryad.9s4mw6mn3)). The results figures of the manuscript can be produced by directly running `07_explore_results.ipynb` without running any previous steps. Specific instructions for running these notebooks is given below. 
 
 Notebooks and scripts included in this repository: 
 
