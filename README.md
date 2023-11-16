@@ -13,7 +13,7 @@ This repository uses an open-source dataset of annotated _Rana sierrae_ vocaliza
 
 The repository contains six notebooks and one script which each demonstrate one step of the analyses described in the manuscript. Running the six Jupyter Notebooks (`.ipynb`) sequentially (skipping the script `06_aggregate_scores.py`) allows the user to reproduce results from the manuscript, including data preparation, model training, and evaluation, using a subset of the full data (specifically, the publicly available annotated [dataset](https://doi.org/10.5061/dryad.9s4mw6mn3)). The results figures of the manuscript can be produced by directly running `07_explore_results.ipynb` without running any previous steps. Specific instructions for running these notebooks is given below. 
 
-Notebooks and scripts included in this repository: 
+## Notebooks and scripts included in this repository: 
 
 - `01_explore_annotated_data.ipynb` Explore annotated dataset of _Rana sierrae_ call types
 
@@ -42,3 +42,41 @@ To use these notebooks, first create a Python environment containing the require
 These notebooks use the Python package OpenSoundscape version 0.8.0. (which can be installed in a Python environment with `pip install opensoundscape==0.8.0`. Note that the notebooks might not be fully compatible with other versions of OpenSoundscape. 
 
 Questions regarding the analysis, data availability, or adaptation of this code for other purposes can be directed to Sam Lapp (sam.lapp@pitt.edu). 
+
+
+## Description of other files in this repository
+
+The subdirectories `resources` and `figures` contain intermediate and ultimate outputs from the analyses performed by the Python notebooks and scripts. Each file is described below:
+
+### CSV Tables in ./resources/
+- `audio_and_raven_files.csv`: Contains the file names for each file in the annotated dataset. The `audio` column contains the file name of the audio file and the `raven` column contains the file name of the raven column. This table is used in Notebooks 1 and 2. 
+- `cnn_validation_outputs.csv`: Contains the predicted scores from the trained Rana sierrae recognizer (CNN) for each clip in the validation set. Columns:
+   - file
+   - start_time: time in seconds of the clip from the start of the file
+   - end_time: time in seconds of the end of the 2 second clip from the start of the file
+   - ramu: CNN's prediction of _Rana sierrae_ presence
+   - negative: CNN's prediction of _Rana sierrae_ absence
+   - softmax: the softmax score for _Rana sierrae_ presence calculated by combining the previous two columns; takes values between 0 and 1
+- `detection_by_date.csv`: Table of the number of CNN detections of _Rana sierrae_ across dates in the full field dataset (not just the publicly available annotated dataset), for various thresholds. A detection is one two second clip with a score above the threshold. Column names are for date and six score thresholds: 2, 4, 6, 7.313 (threhsold used in manuscript main body results), 8, and 10. The score used is the logit of the softmax score. 
+- `detections_by_time.csv`: Table of the number of CNN detections of _Rana sierrae_ across times of day in the full field dataset (not just the publicly available annotated dataset), for various thresholds. A detection is one two second clip with a score above the threshold. Column names are for date and six score thresholds: 2, 4, 6, 7.313 (threhsold used in manuscript main body results), 8, and 10. The score used is the logit of the softmax score. 
+- `dvar_by_time.csv`: Table of the detected vocal activity rate (DVAR) of CNN detections of _Rana sierrae_ across times of day in the full field dataset (not just the publicly available annotated dataset), for various thresholds. DVAR is calculated as the fraction of 2 second clips with a detection for a given time period. A detection is one two second clip with a score above the threshold. Column names are for date and six score thresholds: 2, 4, 6, 7.313 (threhsold used in manuscript main body results), 8, and 10. The score used is the logit of the softmax score. 
+- `dvar_by_card_and_date.csv`: Equivalent to `dvar_by_time.csv` but with an additional level of categorization, by the recording device (here named by the "card" ie SD card on which the data was recorded). The card column's values correspond to one of the five recording devices. 
+- `labels_2s.csv`: Annotations (labels) for every 2-second segment of the files in the public annotated dataset. Annotations are given for each of 5 call types (columns are named for call types). A 1 indicates the call type is present in that 2-second clip. 
+- `total_detections_per_threshold.csv`: summary of total number of detected vocalizations at each threshold. Values in first column correspond to score thresholds : 2, 4, 6, 7.313 (threhsold used in manuscript main body results), 8, and 10. The score used is the logit of the softmax score. 
+- `training_set.csv` and `validation_set.csv`: these are subsets of `labels_2s.csv` which represent a split of labels to be used for training and validation of the CNN. Each row in `labels_2s.csv` is in either `training_set` or `validation_set`. The `rana_sierrae` has a value of 1 if either A or E type calls are present, since these are the two calls the CNN is trained to detect. 
+- `validation_labels_and_scores.csv`: combines the `validation_set.csv`'s `rana_seirra` column (1 for present, 0 for absent) with the `cnn_validation_outputs.csv`'s CNN prediction scores for each clip. The score stored in this column is the softmax; a logit operation is applied before using the thresholds mentioned above. 
+
+### Model file in ./resources/
+`rana_seirrae_cnn.model` is a saved CNN model object that can be loaded in opensoundscape v0.8.0 with the `load_model()` function. It is the original model trained and used during the analysis reported in the manuscript, and can be used to recreated the exact results produced in the mansucript (as shown in Notebook 7). 
+
+### Figures in ./figures
+The figures are produced within the `.ipynb` Notebooks. 
+
+Three figures (`vocal_activity_annotated_7_days.pdf`, `daily_pattern_separate_days.pdf`, and `daily_patterns_by_call_type_annotated.pdf`) summarize temporal activity patterns from just the annotated dataset. 
+
+Two figures (`precision_and_recall_vs_threshold.pdf` and `precision_recall_curve.pdf`) visualize the performance of the classifier on the validation set by plotting precision and recall metrics. 
+
+The remaining figures summarize the detections of the CNN on the full field dataset collected for the study:
+- `dvar_by_card.pdf`: Detected Vocal Activity Rate (defined above) for each device, by date across the full recording period
+- `seasonal_activity_normalized_thresholds.pdf` plots the same seasonal trend as `dvar_by_card` for each detetion threshold, with each curve normalized by the area under the curve (total detections at that threshold). This demonstrates that though different thresholds result in different numbers of detections, the temporal patterns are consistent regardless of threshold choice. 
+- `time_with_3hr_rolling_avg_thresholds.pdf`: Plots the detected vocal activity rate (defined above) calculated on a 15 minute basis with a 3 hour moving average applied, across the day, for all recording dates. 
