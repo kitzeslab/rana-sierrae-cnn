@@ -15,7 +15,7 @@ The repository contains six notebooks and one script which each demonstrate one 
 
 ## Notebooks and scripts included in this repository: 
 
-Each Jupyter Notebook can be run and modified (see instructions below), but we also provide static HTML renderings of each notebook (.html files) which can be opened in a web browser. These pages include code, figures, and interactive audio widgets allowing the user to view spectrograms and listen to sounds. 
+Each Jupyter Notebook and python script can be run and modified (see instructions below), but we also provide static HTML renderings of each notebook (.html files in `./html_notebooks` subfolder) which can be opened in a web browser. These pages include code, figures, and interactive audio widgets allowing the user to view spectrograms and listen to sounds. 
 
 - `01_explore_annotated_data.ipynb` Explore annotated dataset of _Rana sierrae_ call types
 
