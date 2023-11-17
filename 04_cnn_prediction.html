@@ -36,6 +36,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 .highlight .m { color: var(--jp-mirror-editor-number-color) } /* Literal.Number */
 .highlight .s { color: var(--jp-mirror-editor-string-color) } /* Literal.String */
 .highlight .ow { color: var(--jp-mirror-editor-operator-color); font-weight: bold } /* Operator.Word */
+.highlight .pm { color: var(--jp-mirror-editor-punctuation-color) } /* Punctuation.Marker */
 .highlight .w { color: var(--jp-mirror-editor-variable-color) } /* Text.Whitespace */
 .highlight .mb { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Bin */
 .highlight .mf { color: var(--jp-mirror-editor-number-color) } /* Literal.Number.Float */
@@ -14559,12 +14560,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14579,10 +14580,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Use-the-CNN-to-detect-Rana-sierrae-vocalizations">Use the CNN to detect Rana sierrae vocalizations<a class="anchor-link" href="#Use-the-CNN-to-detect-Rana-sierrae-vocalizations">&#182;</a></h2><p>This script uses the CNN trained in 03_train_cnn.py to detect Rana sierrae vocalizations in audio recordings.</p>
+<h2 id="Use-the-CNN-to-detect-Rana-sierrae-vocalizations">Use the CNN to detect Rana sierrae vocalizations<a class="anchor-link" href="#Use-the-CNN-to-detect-Rana-sierrae-vocalizations">&#182;</a></h2><p>This script uses the CNN trained in 03_train_cnn.py to detect Rana sierrae vocalizations in audio recordings. You can alternatively use the the original model object trained and used in the manuscript, which is included in the subfolder <code>./resources/rana_seirrae_cnn.model</code>.</p>
 <p>Note that the github repository does not contain the full (very large) table of CNN outputs nor the full original audio
 dataset, and thus does not contain the files needed to reproduce the outputs of this script.</p>
 <p>Instead, this script demonstrates the prediction process by generating CNN scores on the validation set.</p>
+<p>Researchers interested in accessing the full field dataset can contact <code>sam.lapp@pitt.edu</code>.</p>
 <p>This notebook is part of a series of notebooks and scripts in the <a href="https://github.com/kitzeslab/rana-sierrae-cnn">repository</a>:</p>
 <ul>
 <li><p><code>01_explore_annotated_data.ipynb</code> Explore annotated dataset of Rana sierrae call types</p>
@@ -14620,7 +14622,7 @@ dataset, and thus does not contain the files needed to reproduce the outputs of 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">opensoundscape.torch.models.cnn</span> <span class="kn">import</span> <span class="n">load_model</span>
@@ -14664,17 +14666,19 @@ dataset, and thus does not contain the files needed to reproduce the outputs of 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># choose output location for saving .csv files of CNN output scores</span>
-<span class="n">score_save_dir</span> <span class="o">=</span> <span class="s1">&#39;./resources/&#39;</span>
+<span class="n">score_save_dir</span> <span class="o">=</span> <span class="s1">'./resources/'</span>
 
 <span class="c1"># load the OpenSoundscape CNN model object</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="s1">&#39;./resources/rana_sierrae_cnn.model&#39;</span><span class="p">)</span>
+<span class="c1"># this model was trained and used in the original manuscript</span>
+<span class="c1"># you could replace this path with the path to a model you trained in the previous notebook</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">load_model</span><span class="p">(</span><span class="s1">'./resources/rana_sierrae_cnn.model'</span><span class="p">)</span>
 
 <span class="c1"># choose audio files to run prediction on</span>
-<span class="n">validation_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;./resources/validation_set.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">&#39;file&#39;</span><span class="p">,</span><span class="s1">&#39;start_time&#39;</span><span class="p">,</span><span class="s1">&#39;end_time&#39;</span><span class="p">])</span>
+<span class="n">validation_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'./resources/validation_set.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">'file'</span><span class="p">,</span><span class="s1">'start_time'</span><span class="p">,</span><span class="s1">'end_time'</span><span class="p">])</span>
 </pre></div>
 
      </div>
@@ -14689,17 +14693,17 @@ dataset, and thus does not contain the files needed to reproduce the outputs of 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>run prediction</p>
+<h3 id="Run-prediction">Run prediction<a class="anchor-link" href="#Run-prediction">&#182;</a></h3><p>This cell takes approximately 1 minute to run without accelerating the model using a GPU.</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># generate predictions using batch size 1024</span>
@@ -14710,48 +14714,6 @@ dataset, and thus does not contain the files needed to reproduce the outputs of 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/opensoundscape/torch/models/cnn.py:886: UserWarning: The columns of input samples df differ from `model.classes`.
-  warnings.warn(
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/site-packages/torch/utils/data/dataloader.py:554: UserWarning: This DataLoader will create 12 worker processes in total. Our suggested max number of worker in current system is 10 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
-  warnings.warn(_create_warning_msg(
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpdyf3ntf4wandb&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmplqw9vd2ywandb&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp04okwihjwandb-artifacts&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp2_19jen6wandb-artifacts&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp11u0e5idwandb-media&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmp_t2mmxxewandb-media&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpt_9oxzv1wandb-media&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-/Users/SML161/miniconda3/envs/opso080/lib/python3.9/tempfile.py:821: ResourceWarning: Implicitly cleaning up &lt;TemporaryDirectory &#39;/var/folders/d8/265wdp1n0bn_r85dh3pp95fh0000gq/T/tmpo8cbvdckwandb-media&#39;&gt;
-  _warnings.warn(warn_message, ResourceWarning)
-</pre>
-</div>
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -14770,15 +14732,15 @@ dataset, and thus does not contain the files needed to reproduce the outputs of 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># compute the softmax score across the two classes</span>
-<span class="n">scores</span><span class="p">[</span><span class="s1">&#39;softmax&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">softmax</span><span class="p">(</span><span class="n">tensor</span><span class="p">(</span><span class="n">scores</span><span class="p">[[</span><span class="s1">&#39;rana_sierrae&#39;</span><span class="p">,</span><span class="s1">&#39;negative&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">),</span><span class="mi">1</span><span class="p">)[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+<span class="n">scores</span><span class="p">[</span><span class="s1">'softmax'</span><span class="p">]</span><span class="o">=</span><span class="n">softmax</span><span class="p">(</span><span class="n">tensor</span><span class="p">(</span><span class="n">scores</span><span class="p">[[</span><span class="s1">'rana_sierrae'</span><span class="p">,</span><span class="s1">'negative'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">),</span><span class="mi">1</span><span class="p">)[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
 
 <span class="c1"># save scores to file along with labels</span>
-<span class="n">validation_df</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">scores</span><span class="p">[</span><span class="s1">&#39;softmax&#39;</span><span class="p">]</span>
-<span class="n">validation_df</span><span class="p">[[</span><span class="s1">&#39;rana_sierrae&#39;</span><span class="p">,</span><span class="s1">&#39;score&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;./resources/validation_labels_and_scores.csv&#39;</span><span class="p">)</span>
+<span class="n">validation_df</span><span class="p">[</span><span class="s1">'score'</span><span class="p">]</span><span class="o">=</span><span class="n">scores</span><span class="p">[</span><span class="s1">'softmax'</span><span class="p">]</span>
+<span class="n">validation_df</span><span class="p">[[</span><span class="s1">'rana_sierrae'</span><span class="p">,</span><span class="s1">'score'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'./resources/validation_labels_and_scores.csv'</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14803,7 +14765,7 @@ dataset, and thus does not contain the files needed to reproduce the outputs of 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">precision_recall_curve</span><span class="p">,</span> <span class="n">average_precision_score</span><span class="p">,</span> <span class="n">roc_auc_score</span><span class="p">,</span> <span class="n">auc</span>
@@ -14819,13 +14781,13 @@ dataset, and thus does not contain the files needed to reproduce the outputs of 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">t</span> <span class="o">=</span> <span class="n">precision_recall_curve</span><span class="p">(</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">&#39;rana_sierrae&#39;</span><span class="p">],</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average precision: </span><span class="si">{</span><span class="n">average_precision_score</span><span class="p">(</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">&#39;rana_sierrae&#39;</span><span class="p">],</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Area under ROC curve: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">&#39;rana_sierrae&#39;</span><span class="p">],</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">&#39;score&#39;</span><span class="p">])</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Area under P-R curve: </span><span class="si">{</span><span class="n">auc</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">p</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">t</span> <span class="o">=</span> <span class="n">precision_recall_curve</span><span class="p">(</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">'rana_sierrae'</span><span class="p">],</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">'score'</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Average precision: </span><span class="si">{</span><span class="n">average_precision_score</span><span class="p">(</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">'rana_sierrae'</span><span class="p">],</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">'score'</span><span class="p">])</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Area under ROC curve: </span><span class="si">{</span><span class="n">roc_auc_score</span><span class="p">(</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">'rana_sierrae'</span><span class="p">],</span><span class="n">validation_df</span><span class="p">[</span><span class="s1">'score'</span><span class="p">])</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Area under P-R curve: </span><span class="si">{</span><span class="n">auc</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">p</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 
      </div>
