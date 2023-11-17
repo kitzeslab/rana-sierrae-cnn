@@ -15,6 +15,8 @@ The repository contains six notebooks and one script which each demonstrate one 
 
 ## Notebooks and scripts included in this repository: 
 
+Each Jupyter Notebook can be run and modified (see instructions below), but we also provide static HTML renderings of each notebook (.html files) which can be opened in a web browser. These pages include code, figures, and interactive audio widgets allowing the user to view spectrograms and listen to sounds. 
+
 - `01_explore_annotated_data.ipynb` Explore annotated dataset of _Rana sierrae_ call types
 
 - `02_prep_training_data.ipynb` Prepare annotated files for training a CNN machine learning model
@@ -27,7 +29,7 @@ The repository contains six notebooks and one script which each demonstrate one 
 
 - `06_aggregate_scores.py` Aggregate scores from CNN prediction across dates and times of day. Note that this script is only provided as a demonstration of aggregating scores from a large dataset. Since we do not include the full audio dataset (thousands of hours of audio) or full set of CNN prediction across the entire audio dataset, the outputs of this script cannot be reproduced with the provided data. Instead, we include the outputs of this script (summaries of call activity detected by the CNN) as data tables in this repository. If you are running these notebooks sequentially, simply skip this script and proceed from `05_cnn_validation.ipynb` to `07_explore_results.ipynb`. 
 
-- `07_explore_results.ipynb` Analyze temporal patterns of vocal activity using the CNN detections
+- `07_explore_results.ipynb` Analyze temporal patterns of vocal activity using the CNN detections. This notebook reproduces the results figures in the manuscript. 
 
 ## Running the code in this repository
 
